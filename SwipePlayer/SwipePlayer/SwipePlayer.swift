@@ -81,7 +81,7 @@ class SwipePlayer {
     @available(*, unavailable)
     init() { fatalError() }
     
-    init(viewController: UIViewController, minimizedPlayerFrame:CGRect? = nil, maximizedPlayerHeight:CGFloat? = nil) {
+    public init(viewController: UIViewController, minimizedPlayerFrame:CGRect? = nil, maximizedPlayerHeight:CGFloat? = nil) {
         self.parentVC = viewController
         if let frm = minimizedPlayerFrame {
             self.minimizedFrame = frm
@@ -140,7 +140,7 @@ class SwipePlayer {
         }
     }
     
-    func seekToTime(time:Float64, onTime:(()->Void)? = nil) {
+    public func seekToTime(time:Float64, onTime:(()->Void)? = nil) {
         self.player.seekToTime(time: time, seekingFinish: onTime)
     }
     
