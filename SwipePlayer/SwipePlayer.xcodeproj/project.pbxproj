@@ -19,6 +19,8 @@
 		C805112229D54D7C00D2C9BD /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C805111E29D54D7B00D2C9BD /* OverlayView.swift */; };
 		C826B3D329DF6E9B0073E826 /* MinimizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89151D029DF6E6B0048C8A6 /* MinimizeView.xib */; };
 		C826B3D429DF6E9F0073E826 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89151D129DF6E6B0048C8A6 /* OverlayView.xib */; };
+		C826B3DF29DF74A90073E826 /* MinimizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89151D029DF6E6B0048C8A6 /* MinimizeView.xib */; };
+		C826B3E029DF74AF0073E826 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89151D129DF6E6B0048C8A6 /* OverlayView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,12 +35,20 @@
 		C805111A29D54D4800D2C9BD /* SwipePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipePlayer.swift; sourceTree = "<group>"; };
 		C805111D29D54D7B00D2C9BD /* MinimizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimizeView.swift; sourceTree = "<group>"; };
 		C805111E29D54D7B00D2C9BD /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		C826B3DB29DF746A0073E826 /* SourceBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SourceBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89151D029DF6E6B0048C8A6 /* MinimizeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MinimizeView.xib; sourceTree = "<group>"; };
 		C89151D129DF6E6B0048C8A6 /* OverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C80510FE29D5385700D2C9BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C826B3D829DF746A0073E826 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				C805110129D5385700D2C9BD /* SwipePlayer.framework */,
+				C826B3DB29DF746A0073E826 /* SourceBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +150,23 @@
 			productReference = C805110129D5385700D2C9BD /* SwipePlayer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C826B3DA29DF746A0073E826 /* SourceBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C826B3DC29DF746A0073E826 /* Build configuration list for PBXNativeTarget "SourceBundle" */;
+			buildPhases = (
+				C826B3D729DF746A0073E826 /* Sources */,
+				C826B3D829DF746A0073E826 /* Frameworks */,
+				C826B3D929DF746A0073E826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SourceBundle;
+			productName = SourceBundle;
+			productReference = C826B3DB29DF746A0073E826 /* SourceBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +177,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					C805110029D5385700D2C9BD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					C826B3DA29DF746A0073E826 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -167,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				C805110029D5385700D2C9BD /* SwipePlayer */,
+				C826B3DA29DF746A0073E826 /* SourceBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -178,6 +210,15 @@
 			files = (
 				C826B3D329DF6E9B0073E826 /* MinimizeView.xib in Resources */,
 				C826B3D429DF6E9F0073E826 /* OverlayView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C826B3D929DF746A0073E826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C826B3DF29DF74A90073E826 /* MinimizeView.xib in Resources */,
+				C826B3E029DF74AF0073E826 /* OverlayView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +238,13 @@
 				C805110629D5385700D2C9BD /* SwipePlayer.docc in Sources */,
 				C805110F29D539B200D2C9BD /* SwipeView.swift in Sources */,
 				C805111729D5452600D2C9BD /* IOverlayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C826B3D729DF746A0073E826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +441,50 @@
 			};
 			name = Release;
 		};
+		C826B3DD29DF746A0073E826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CLGAP5663M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serkanhocam.SourceBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C826B3DE29DF746A0073E826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CLGAP5663M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serkanhocam.SourceBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,6 +502,15 @@
 			buildConfigurations = (
 				C805110B29D5385700D2C9BD /* Debug */,
 				C805110C29D5385700D2C9BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C826B3DC29DF746A0073E826 /* Build configuration list for PBXNativeTarget "SourceBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C826B3DD29DF746A0073E826 /* Debug */,
+				C826B3DE29DF746A0073E826 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
