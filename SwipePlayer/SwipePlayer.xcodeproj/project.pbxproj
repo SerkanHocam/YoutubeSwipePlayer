@@ -35,7 +35,6 @@
 		C805111E29D54D7B00D2C9BD /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		C89151D029DF6E6B0048C8A6 /* MinimizeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MinimizeView.xib; sourceTree = "<group>"; };
 		C89151D129DF6E6B0048C8A6 /* OverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
-		C8D9354A29DF26AF00B9ADE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +53,6 @@
 			children = (
 				C805110329D5385700D2C9BD /* SwipePlayer */,
 				C805110229D5385700D2C9BD /* Products */,
-				C8D9354929DF26AF00B9ADE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,14 +105,6 @@
 				C89151D129DF6E6B0048C8A6 /* OverlayView.xib */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		C8D9354929DF26AF00B9ADE0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C8D9354A29DF26AF00B9ADE0 /* UIKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
