@@ -7,7 +7,8 @@
 
 import UIKit
 
-class SwipePlayer {
+@objc
+class SwipePlayer:NSObject {
     
     private let player = PlayerCore()
     private let swipeView: SwipeView
@@ -79,9 +80,10 @@ class SwipePlayer {
     }
     
     @available(*, unavailable)
-    init() { fatalError() }
+    override init() { fatalError() }
     
     public init(viewController: UIViewController, minimizedPlayerFrame:CGRect? = nil, maximizedPlayerHeight:CGFloat? = nil) {
+        
         self.parentVC = viewController
         if let frm = minimizedPlayerFrame {
             self.minimizedFrame = frm
@@ -90,6 +92,7 @@ class SwipePlayer {
         
         self.swipeView = SwipeView(frame: self.minimizedFrame, maximizePlayerHeight: maximizedPlayerHeight)
         
+        super.init()
         self.initialize()
     }
     
