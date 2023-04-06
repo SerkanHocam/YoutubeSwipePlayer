@@ -17,8 +17,6 @@
 		C805111B29D54D4800D2C9BD /* SwipePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C805111A29D54D4800D2C9BD /* SwipePlayer.swift */; };
 		C805112129D54D7C00D2C9BD /* MinimizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C805111D29D54D7B00D2C9BD /* MinimizeView.swift */; };
 		C805112229D54D7C00D2C9BD /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C805111E29D54D7B00D2C9BD /* OverlayView.swift */; };
-		C805112329D54D7C00D2C9BD /* MinimizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C805111F29D54D7B00D2C9BD /* MinimizeView.xib */; settings = {ASSET_TAGS = (New, ); }; };
-		C805112429D54D7C00D2C9BD /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C805112029D54D7C00D2C9BD /* OverlayView.xib */; settings = {ASSET_TAGS = (New, ); }; };
 		C8D9354B29DF26AF00B9ADE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D9354A29DF26AF00B9ADE0 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +32,6 @@
 		C805111A29D54D4800D2C9BD /* SwipePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipePlayer.swift; sourceTree = "<group>"; };
 		C805111D29D54D7B00D2C9BD /* MinimizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimizeView.swift; sourceTree = "<group>"; };
 		C805111E29D54D7B00D2C9BD /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
-		C805111F29D54D7B00D2C9BD /* MinimizeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MinimizeView.xib; sourceTree = "<group>"; };
-		C805112029D54D7C00D2C9BD /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
 		C8D9354A29DF26AF00B9ADE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -104,9 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				C805111D29D54D7B00D2C9BD /* MinimizeView.swift */,
-				C805111F29D54D7B00D2C9BD /* MinimizeView.xib */,
 				C805111E29D54D7B00D2C9BD /* OverlayView.swift */,
-				C805112029D54D7C00D2C9BD /* OverlayView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,8 +185,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C805112329D54D7C00D2C9BD /* MinimizeView.xib in Resources */,
-				C805112429D54D7C00D2C9BD /* OverlayView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
