@@ -19,7 +19,6 @@
 		C805112229D54D7C00D2C9BD /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C805111E29D54D7B00D2C9BD /* OverlayView.swift */; };
 		C826B3D329DF6E9B0073E826 /* MinimizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89151D029DF6E6B0048C8A6 /* MinimizeView.xib */; };
 		C826B3D429DF6E9F0073E826 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89151D129DF6E6B0048C8A6 /* OverlayView.xib */; };
-		C8D9354B29DF26AF00B9ADE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D9354A29DF26AF00B9ADE0 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8D9354B29DF26AF00B9ADE0 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "SwipePlayer/Views/OverlayView.xib SwipePlayer/Views/MinimizeView.xib";
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -377,6 +376,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "SwipePlayer/Views/OverlayView.xib SwipePlayer/Views/MinimizeView.xib";
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
