@@ -19,6 +19,7 @@
 		C805112229D54D7C00D2C9BD /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C805111E29D54D7B00D2C9BD /* OverlayView.swift */; };
 		C805112329D54D7C00D2C9BD /* MinimizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C805111F29D54D7B00D2C9BD /* MinimizeView.xib */; };
 		C805112429D54D7C00D2C9BD /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C805112029D54D7C00D2C9BD /* OverlayView.xib */; };
+		C8D9354B29DF26AF00B9ADE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D9354A29DF26AF00B9ADE0 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		C805111E29D54D7B00D2C9BD /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		C805111F29D54D7B00D2C9BD /* MinimizeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MinimizeView.xib; sourceTree = "<group>"; };
 		C805112029D54D7C00D2C9BD /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
+		C8D9354A29DF26AF00B9ADE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D9354B29DF26AF00B9ADE0 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +56,7 @@
 			children = (
 				C805110329D5385700D2C9BD /* SwipePlayer */,
 				C805110229D5385700D2C9BD /* Products */,
+				C8D9354929DF26AF00B9ADE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +109,14 @@
 				C805112029D54D7C00D2C9BD /* OverlayView.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C8D9354929DF26AF00B9ADE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8D9354A29DF26AF00B9ADE0 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +349,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,6 +382,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
