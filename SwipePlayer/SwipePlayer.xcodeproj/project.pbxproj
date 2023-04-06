@@ -21,6 +21,7 @@
 		C826B3D429DF6E9F0073E826 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89151D129DF6E6B0048C8A6 /* OverlayView.xib */; };
 		C826B3DF29DF74A90073E826 /* MinimizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89151D029DF6E6B0048C8A6 /* MinimizeView.xib */; };
 		C826B3E029DF74AF0073E826 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89151D129DF6E6B0048C8A6 /* OverlayView.xib */; };
+		C826B3E129DF75010073E826 /* SourceBundle.bundle in Sources */ = {isa = PBXBuildFile; fileRef = C826B3DB29DF746A0073E826 /* SourceBundle.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -229,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C826B3E129DF75010073E826 /* SourceBundle.bundle in Sources */,
 				C805112229D54D7C00D2C9BD /* OverlayView.swift in Sources */,
 				C805111829D5452600D2C9BD /* IMiniPlayerView.swift in Sources */,
 				C805111929D5452600D2C9BD /* FullScreenVC.swift in Sources */,
