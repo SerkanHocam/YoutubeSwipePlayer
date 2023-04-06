@@ -77,6 +77,10 @@ class SwipePlayer {
             }
         }
     }
+    
+    @available(*, unavailable)
+    init() { fatalError() }
+    
     init(viewController: UIViewController, minimizedPlayerFrame:CGRect? = nil, maximizedPlayerHeight:CGFloat? = nil) {
         self.parentVC = viewController
         if let frm = minimizedPlayerFrame {
