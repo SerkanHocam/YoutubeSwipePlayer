@@ -235,7 +235,7 @@ class PlayerCore : UIView, AVPlayerItemOutputPushDelegate {
     }
 }
 
-enum PlayerStatus {
+public enum PlayerStatus {
     case ReadyToPlay
     case Playing
     case Buffering

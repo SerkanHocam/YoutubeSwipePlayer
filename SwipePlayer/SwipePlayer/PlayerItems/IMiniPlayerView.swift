@@ -8,13 +8,13 @@
 import UIKit
 
 
-protocol IMiniPlayerView:UIView, OverlayProtocol {
+public protocol IMiniPlayerView:UIView, OverlayProtocol {
     var player:SwipePlayer! { get set }
     func updateUI(status:PlayerStatus)
 }
 
 @objc
-protocol MiniPlayerProtocol {
+public protocol MiniPlayerProtocol {
     @objc optional func startPlaying()
     @objc optional func finishPlaying()
     @objc optional func updateSeekbar(currentTime:Float64, totalTime:Float64)

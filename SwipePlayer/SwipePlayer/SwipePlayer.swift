@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SwipePlayer:NSObject {
+public class SwipePlayer:NSObject {
     
     private let player = PlayerCore()
     private let swipeView: SwipeView

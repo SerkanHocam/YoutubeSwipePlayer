@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol IOverlayView:UIView, OverlayProtocol {
+public protocol IOverlayView:UIView, OverlayProtocol {
     ///This property provide to reach by overlay's controls like play-pause or seeking
     var player:SwipePlayer! { get set }
 
@@ -20,7 +20,7 @@ protocol IOverlayView:UIView, OverlayProtocol {
 }
 
 @objc
-protocol OverlayProtocol {
+public protocol OverlayProtocol {
     @objc optional func startPlaying()
     @objc optional func finishPlaying()
     @objc optional func swipeViewMinimized()

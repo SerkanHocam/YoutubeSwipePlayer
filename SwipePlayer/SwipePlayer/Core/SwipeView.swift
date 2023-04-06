@@ -267,13 +267,13 @@ class SwipeView: UIView, UIGestureRecognizerDelegate {
     }
 }
 
-enum PlayerViewState {
+public enum PlayerViewState {
     case minimized
     case maximized
     case hidden
 }
 
-enum Direction {
+public enum Direction {
     case vertical
     case horizontal
     case none
