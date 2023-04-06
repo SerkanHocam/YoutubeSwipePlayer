@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 protocol IMiniPlayerView:UIView, OverlayProtocol {
     var player:SwipePlayer! { get set }
     func updateUI(status:PlayerStatus)

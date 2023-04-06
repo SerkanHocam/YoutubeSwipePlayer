@@ -15,4 +15,3 @@ FOUNDATION_EXPORT const unsigned char SwipePlayerVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SwipePlayer/PublicHeader.h>
 
-#import <SwipePlayer/SwipePlayer-Swift.h>
