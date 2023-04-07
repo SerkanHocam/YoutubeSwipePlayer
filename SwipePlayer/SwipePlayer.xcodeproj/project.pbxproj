@@ -17,10 +17,8 @@
 		C805111B29D54D4800D2C9BD /* SwipePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C805111A29D54D4800D2C9BD /* SwipePlayer.swift */; };
 		C805112129D54D7C00D2C9BD /* MinimizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C805111D29D54D7B00D2C9BD /* MinimizeView.swift */; };
 		C805112229D54D7C00D2C9BD /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C805111E29D54D7B00D2C9BD /* OverlayView.swift */; };
-		C826B3D329DF6E9B0073E826 /* MinimizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89151D029DF6E6B0048C8A6 /* MinimizeView.xib */; };
 		C826B3D429DF6E9F0073E826 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89151D129DF6E6B0048C8A6 /* OverlayView.xib */; };
-		C826B3E929DF98520073E826 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C826B3E829DF98520073E826 /* AVKit.framework */; };
-		C826B3EB29DF98820073E826 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C826B3EA29DF98820073E826 /* UIKit.framework */; };
+		C85F360829DFAA5E0039D35E /* MinimizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89151D029DF6E6B0048C8A6 /* MinimizeView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +33,6 @@
 		C805111A29D54D4800D2C9BD /* SwipePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipePlayer.swift; sourceTree = "<group>"; };
 		C805111D29D54D7B00D2C9BD /* MinimizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimizeView.swift; sourceTree = "<group>"; };
 		C805111E29D54D7B00D2C9BD /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
-		C826B3E829DF98520073E826 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		C826B3EA29DF98820073E826 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C89151D029DF6E6B0048C8A6 /* MinimizeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MinimizeView.xib; sourceTree = "<group>"; };
 		C89151D129DF6E6B0048C8A6 /* OverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,8 +42,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C826B3E929DF98520073E826 /* AVKit.framework in Frameworks */,
-				C826B3EB29DF98820073E826 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +111,6 @@
 		C826B3E529DF983D0073E826 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C826B3EA29DF98820073E826 /* UIKit.framework */,
-				C826B3E829DF98520073E826 /* AVKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,7 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C826B3D329DF6E9B0073E826 /* MinimizeView.xib in Resources */,
+				C85F360829DFAA5E0039D35E /* MinimizeView.xib in Resources */,
 				C826B3D429DF6E9F0073E826 /* OverlayView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,7 +347,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +382,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
