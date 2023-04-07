@@ -12,5 +12,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "16.2"
   s.source       = { :git => "https://github.com/SerkanHocam/YoutubeSwipePlayer.git", :tag => s.version }
   s.source_files = "SwipePlayer/**/*.{h,swift}"
+  s.resources    = "SwipePlayer/**/*.xib"
   s.frameworks   = "UIKit", "AVKit"
 end
