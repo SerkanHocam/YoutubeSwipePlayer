@@ -97,12 +97,11 @@ public class SwipePlayer:NSObject {
     
     private func initialize() {
         self.backgroundColor = .white
-        guard let bundle = Bundle(identifier:"com.serkanhocam.SwipePlayer") else { return }
         
-        if let view = bundle.loadNibNamed("MinimizeView", owner: nil)?[0] as? IMiniPlayerView {
+        if let view = Bundle.main.loadNibNamed("MinimizeView", owner: nil)?[0] as? IMiniPlayerView {
             self.miniPlayerView = view
         }
-        if let view = bundle.loadNibNamed("OverlayView", owner: nil)?[0] as? IOverlayView {
+        if let view = Bundle.main.loadNibNamed("OverlayView", owner: nil)?[0] as? IOverlayView {
             self.overlay = view
         }
         self.player.statusEvent = { [weak self] statusInfo in
