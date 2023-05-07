@@ -98,10 +98,11 @@ public class SwipePlayer:NSObject {
     private func initialize() {
         self.backgroundColor = .white
         
-        if let view = Bundle.main.loadNibNamed("MinimizeView", owner: nil)?[0] as? IMiniPlayerView {
+        let bundle = Bundle(for: SwipePlayer.self)
+        if let view = bundle.loadNibNamed("MinimizeView", owner: nil)?[0] as? IMiniPlayerView {
             self.miniPlayerView = view
         }
-        if let view = Bundle.main.loadNibNamed("OverlayView", owner: nil)?[0] as? IOverlayView {
+        if let view = bundle.loadNibNamed("OverlayView", owner: nil)?[0] as? IOverlayView {
             self.overlay = view
         }
         self.player.statusEvent = { [weak self] statusInfo in
