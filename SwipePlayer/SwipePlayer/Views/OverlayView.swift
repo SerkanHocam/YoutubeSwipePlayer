@@ -215,6 +215,7 @@ class OverlayView:UIView, IOverlayView {
         self.progressBar.isHidden = true
         self.vwPlayer.frame = self.bounds
     }
+    
     func swipeViewMaximized() {
         self.progressBar.isHidden = false
         self.vwPlayer.frame = CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height - self.seekBar.frame.height / 2)

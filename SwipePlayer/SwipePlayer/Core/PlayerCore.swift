@@ -7,7 +7,7 @@
 import UIKit
 import MediaPlayer
 
-class PlayerCore : UIView, AVPlayerItemOutputPushDelegate {
+class PlayerCore : UIView, IPlayer, AVPlayerItemOutputPushDelegate {
     
     var isPlaying = false
     

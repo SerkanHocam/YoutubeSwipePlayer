@@ -9,12 +9,12 @@ import UIKit
 
 public class SwipePlayer:NSObject {
     
-    private let player = PlayerCore()
+    private let player : IPlayer
     private let swipeView: SwipeView
     private let parentVC: UIViewController
     
-    private var minimizedFrame : CGRect = {
-        let width = UIScreen.main.bounds.width / 2
+    public private(set) var minimizedFrame : CGRect = {
+        let width = UIScreen.main.bounds.width / 2.5
         let height = width * 0.6
         return CGRect(x: 0.0, y: UIScreen.main.bounds.height - height - 80, width: width, height: height)
     }()
@@ -87,7 +87,8 @@ public class SwipePlayer:NSObject {
         if let frm = minimizedPlayerFrame {
             self.minimizedFrame = frm
         }
-        self.player.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin, .flexibleWidth,.flexibleHeight]
+        self.player = PlayerCore()
+        self.player.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin, .flexibleWidth, .flexibleHeight]
         
         self.swipeView = SwipeView(frame: self.minimizedFrame, maximizePlayerHeight: maximizedPlayerHeight)
         
@@ -119,10 +120,10 @@ public class SwipePlayer:NSObject {
         }
         self.swipeView.swipeViewEvent = {[weak self] state in
             guard let strongSelf = self else { return }
-            if state == .minimized {
+            if state == .willMinimize {
                 strongSelf.overlay?.hideOverlay()
                 strongSelf.overlay?.swipeViewMinimized?()
-            } else {
+            } else if state == .maximized {
                 strongSelf.overlay?.swipeViewMaximized?()
             }
         }

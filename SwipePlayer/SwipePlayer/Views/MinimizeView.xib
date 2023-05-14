@@ -15,14 +15,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sample Video" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8w-Cr-97k">
-                    <rect key="frame" x="149" y="0.0" width="143" height="123"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <rect key="frame" x="158" y="0.0" width="158" height="123"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMl-4g-ZLM">
-                    <rect key="frame" x="347" y="0.0" width="46" height="123"/>
+                    <rect key="frame" x="355" y="0.0" width="38" height="123"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="Button"/>
@@ -32,11 +32,11 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kf4-9b-J1p">
-                    <rect key="frame" x="293" y="0.0" width="46" height="123"/>
+                    <rect key="frame" x="316" y="0.0" width="38" height="123"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" image="pause.fill" catalog="system"/>
+                    <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
                     <connections>
                         <action selector="btnPlayPause_click:" destination="iN0-l3-epB" eventType="touchUpInside" id="IE2-Z6-726"/>
                     </connections>
@@ -47,12 +47,13 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="btnPlayPause" destination="Kf4-9b-J1p" id="IUD-EV-4KV"/>
+                <outlet property="txtCaption" destination="A8w-Cr-97k" id="BxM-ap-CQK"/>
             </connections>
             <point key="canvasLocation" x="-8.3969465648854964" y="-242.60563380281693"/>
         </view>
     </objects>
     <resources>
-        <image name="pause.fill" catalog="system" width="117" height="128"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
     </resources>
 </document>

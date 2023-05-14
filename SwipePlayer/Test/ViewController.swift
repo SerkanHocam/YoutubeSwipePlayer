@@ -14,11 +14,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.player = SwipePlayer(viewController: self)
         // Do any additional setup after loading the view.
     }
 
     @IBAction func startPlayer(_ sender: Any) {
-        self.player = SwipePlayer(viewController: self)
         guard let url = URL(string: "https://d3rlna7iyyu8wu.cloudfront.net/skip_armstrong/skip_armstrong_stereo_subs.m3u8") else { return }
         self.player.start(videoUrl: url)
     }

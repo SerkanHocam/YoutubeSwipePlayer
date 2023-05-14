@@ -78,7 +78,6 @@ class SwipeView: UIView, UIGestureRecognizerDelegate {
         set {
             self.headerArea.backgroundColor = newValue
             self.detailArea.backgroundColor = newValue
-            self.playerArea.backgroundColor = newValue
         }
     }
     
@@ -147,6 +146,12 @@ class SwipeView: UIView, UIGestureRecognizerDelegate {
             } else {
                 self.direction = .horizontal
             }
+            if self.state == .minimized {
+                self.swipeViewEvent?(.willMaximize)
+            } else if self.state == .maximized {
+                self.swipeViewEvent?(.willMinimize)
+            }
+            
         }
         var finalState : PlayerViewState!
         switch self.state {
@@ -183,6 +188,7 @@ class SwipeView: UIView, UIGestureRecognizerDelegate {
             self.calculateViews(to: self.maximizedPlayerFrame, from: self.minimizedPlayerFrame, margin: 0, factor: factor, alpha: factor)
         case .hidden:
             self.calculateViews(to: self.minimizedPlayerFrame, from: self.minimizedPlayerFrame, margin: 0, factor: factor, alpha: 1 - factor * 4)
+        default: break
         }
     }
     
@@ -201,7 +207,6 @@ class SwipeView: UIView, UIGestureRecognizerDelegate {
             self.detailArea.frame.origin = CGPoint(x: 0, y:self.playerArea.frame.origin.y + self.playerArea.frame.height)
             
             let colorAlpha = 1 - alpha
-            self.playerArea.backgroundColor = self.playerArea.backgroundColor?.withAlphaComponent(1 - alpha)
             self.detailArea.alpha = colorAlpha
             
             if let mv = self.minimizeView {
@@ -230,7 +235,6 @@ class SwipeView: UIView, UIGestureRecognizerDelegate {
                 self.videoPlayer?.frame = self.playerArea.bounds
                 
                 self.detailArea.alpha = 1
-                self.playerArea.backgroundColor = self.playerArea.backgroundColor?.withAlphaComponent(1)
                 
                 self.detailArea.frame.origin = CGPoint(x: 0, y: self.playerArea.frame.origin.y + self.playerArea.frame.height)
                 self.detailArea.frame.size = CGSize(width: self.frame.width, height: self.frame.size.height - (self.detailArea.frame.origin.y))
@@ -248,7 +252,6 @@ class SwipeView: UIView, UIGestureRecognizerDelegate {
                 self.playerArea.frame = CGRect(origin: CGPoint(x: self.minimizedPlayerFrame.origin.x, y: 0),
                                                size: self.minimizedPlayerFrame.size)
                 self.videoPlayer?.frame = self.playerArea.bounds
-                self.playerArea.backgroundColor = self.playerArea.backgroundColor?.withAlphaComponent(0)
                 
                 self.detailArea.alpha = 0
                 self.detailArea.frame.origin = CGPoint(x: 0, y: self.playerArea.frame.height)
@@ -262,14 +265,19 @@ class SwipeView: UIView, UIGestureRecognizerDelegate {
         case .hidden:
             self.frame.origin.x =  -self.frame.width
             self.playerArea.frame.origin = CGPoint(x: self.minimizedPlayerFrame.origin.x, y: 0)
+        default: break
         }
         self.swipeViewEvent?(toState)
     }
 }
 
 public enum PlayerViewState {
+    case willMinimize
     case minimized
+    
+    case willMaximize
     case maximized
+    
     case hidden
 }
 

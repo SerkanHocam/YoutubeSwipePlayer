@@ -10,6 +10,8 @@ import UIKit
 class MinimizeView: UIView, IMiniPlayerView {
     
     var player: SwipePlayer!
+    @IBOutlet weak var txtCaption: UILabel!
+    
     @IBOutlet weak var btnPlayPause:UIButton!
     
     func updateUI(status: PlayerStatus) {
@@ -36,6 +38,13 @@ class MinimizeView: UIView, IMiniPlayerView {
     
     @IBAction func btnClose_click(_ sender: Any) {
         self.player.close()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        let xCoord = self.player.minimizedFrame.origin.x + self.player.minimizedFrame.width + 8
+        self.txtCaption.frame.origin = CGPoint(x: xCoord, y: 0)
+        self.txtCaption.frame.size = CGSize(width: self.btnPlayPause.frame.origin.x, height: self.frame.height)
     }
     
 }

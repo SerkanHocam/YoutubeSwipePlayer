@@ -27,6 +27,7 @@
 		C8AF9C5E29EB4E8A00AB01A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AF9C5C29EB4E8A00AB01A3 /* LaunchScreen.storyboard */; };
 		C8D3D2782A083D5C001B0A92 /* SwipePlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C805110129D5385700D2C9BD /* SwipePlayer.framework */; };
 		C8D3D2792A083D5C001B0A92 /* SwipePlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C805110129D5385700D2C9BD /* SwipePlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C8D3D2822A085548001B0A92 /* IPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D3D2812A085548001B0A92 /* IPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		C8AF9C5A29EB4E8A00AB01A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8AF9C5D29EB4E8A00AB01A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8AF9C5F29EB4E8A00AB01A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8D3D2812A085548001B0A92 /* IPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				C805111629D5452600D2C9BD /* FullScreenVC.swift */,
 				C805111529D5452600D2C9BD /* IMiniPlayerView.swift */,
 				C805111429D5452600D2C9BD /* IOverlayView.swift */,
+				C8D3D2812A085548001B0A92 /* IPlayer.swift */,
 			);
 			path = PlayerItems;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			files = (
 				C805112229D54D7C00D2C9BD /* OverlayView.swift in Sources */,
 				C805111829D5452600D2C9BD /* IMiniPlayerView.swift in Sources */,
+				C8D3D2822A085548001B0A92 /* IPlayer.swift in Sources */,
 				C805111929D5452600D2C9BD /* FullScreenVC.swift in Sources */,
 				C805112129D54D7C00D2C9BD /* MinimizeView.swift in Sources */,
 				C805111B29D54D4800D2C9BD /* SwipePlayer.swift in Sources */,
