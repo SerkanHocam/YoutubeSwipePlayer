@@ -11,13 +11,11 @@ It is a open source framework to create player seems youtube for IOS.
 
 Add fallowing code in cocapods file and run "pod update" on Terminal.
 
-<p>
-  pod 'SwipePlayer', :git => "https://github.com/SerkanHocam/YoutubeSwipePlayer.git"
-</p>
+
+`pod 'SwipePlayer', :git => "https://github.com/SerkanHocam/YoutubeSwipePlayer.git"`
+
 
 Create an instance and show it.
-
-####Javascript　
 
 ```swift
     let player = SwipePlayer(viewController: self)
