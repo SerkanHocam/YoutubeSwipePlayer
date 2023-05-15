@@ -244,6 +244,7 @@ class SwipeView: UIView, UIGestureRecognizerDelegate {
                     mv.alpha = 0
                 }
                 self.headerArea.isHidden = false
+                self.playerArea.backgroundColor = self.backgroundColor
             })
         case .minimized:
             UIView.animate(withDuration: 0.3, animations: {
@@ -261,7 +262,6 @@ class SwipeView: UIView, UIGestureRecognizerDelegate {
                     mv.frame = mvFrame
                     mv.alpha = 1
                 }
-                self.playerArea.backgroundColor = self.backgroundColor
             })
         case .hidden:
             self.frame.origin.x =  -self.frame.width
