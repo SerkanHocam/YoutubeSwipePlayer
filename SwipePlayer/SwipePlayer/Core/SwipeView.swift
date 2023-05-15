@@ -266,6 +266,7 @@ class SwipeView: UIView, UIGestureRecognizerDelegate {
         case .hidden:
             self.frame.origin.x =  -self.frame.width
             self.playerArea.frame.origin = CGPoint(x: self.minimizedPlayerFrame.origin.x, y: 0)
+            self.headerArea.isHidden = true
         default: break
         }
         self.swipeViewEvent?(toState)
