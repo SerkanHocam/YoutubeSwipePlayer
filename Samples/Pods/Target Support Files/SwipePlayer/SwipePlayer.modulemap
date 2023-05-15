@@ -1,0 +1,6 @@
+framework module SwipePlayer {
+  umbrella header "SwipePlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

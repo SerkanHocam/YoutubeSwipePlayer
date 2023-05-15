@@ -1,0 +1,21 @@
+PODS:
+  - SwipePlayer (1.0.0)
+
+DEPENDENCIES:
+  - SwipePlayer (from `https://github.com/SerkanHocam/YoutubeSwipePlayer.git`)
+
+EXTERNAL SOURCES:
+  SwipePlayer:
+    :git: https://github.com/SerkanHocam/YoutubeSwipePlayer.git
+
+CHECKOUT OPTIONS:
+  SwipePlayer:
+    :commit: 269bd6bf67e88be94a2a6b1d4e0a7300efaba012
+    :git: https://github.com/SerkanHocam/YoutubeSwipePlayer.git
+
+SPEC CHECKSUMS:
+  SwipePlayer: 439075e23ba15ffaff2e6c80baaee9ab4b2f7b80
+
+PODFILE CHECKSUM: ae25b824bbafeb7ed53f952cbca289b1c18a36ef
+
+COCOAPODS: 1.12.0
