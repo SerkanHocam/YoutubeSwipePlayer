@@ -17,12 +17,14 @@ Add fallowing code in cocapods file and run "pod update" on Terminal.
 
 Create an instance and show it.
 
-<p>
+####Javascript　
+
+```swift
     let player = SwipePlayer(viewController: self)
     player.detailView = YourOwnDetailView()
-    guard let url = URL(string: "https://d3rlna7iyyu8wu.cloudfront.net/skip_armstrong/skip_armstrong_stereo_subs.m3u8") else { return }
+    guard let url = URL(string: "https://yourVideoUrl.m3u8") else { return }
     player.start(videoUrl: url)
-</p>
+```
 
 It start fallowing image.
 
