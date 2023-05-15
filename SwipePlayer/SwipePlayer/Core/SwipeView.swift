@@ -150,8 +150,8 @@ class SwipeView: UIView, UIGestureRecognizerDelegate {
                 self.swipeViewEvent?(.willMaximize)
             } else if self.state == .maximized {
                 self.swipeViewEvent?(.willMinimize)
+                self.playerArea.backgroundColor = .clear
             }
-            
         }
         var finalState : PlayerViewState!
         switch self.state {
@@ -261,6 +261,7 @@ class SwipeView: UIView, UIGestureRecognizerDelegate {
                     mv.frame = mvFrame
                     mv.alpha = 1
                 }
+                self.playerArea.backgroundColor = self.backgroundColor
             })
         case .hidden:
             self.frame.origin.x =  -self.frame.width
