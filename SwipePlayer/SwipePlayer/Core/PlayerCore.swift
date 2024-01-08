@@ -42,14 +42,20 @@ class PlayerCore : UIView, IPlayer, AVPlayerItemOutputPushDelegate {
     }
     
     private func createPlayer() {
+        self.backgroundColor = .black
         self.player = AVPlayer()
         self.playerLayer = AVPlayerLayer(player: self.player)
         
-        self.playerLayer.videoGravity = .resize
-        self.playerLayer.backgroundColor = UIColor.black.cgColor
+        self.playerLayer.videoGravity = .resizeAspect
+//        self.playerLayer.backgroundColor = UIColor.black.cgColor
         self.layer.insertSublayer(self.playerLayer, at: 0)
+        
+//        self.layer.needsDisplayOnBoundsChange = true
+//        self.playerLayer.needsDisplayOnBoundsChange = true
+        
         self.addObserver()
     }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         self.playerLayer.frame.size = self.bounds.size

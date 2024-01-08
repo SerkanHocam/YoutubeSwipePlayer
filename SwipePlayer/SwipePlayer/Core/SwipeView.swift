@@ -86,6 +86,7 @@ class SwipeView: UIView, UIGestureRecognizerDelegate {
         
         self.playerArea.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.maximize)))
         self.playerArea.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(self.swipeGesture)))
+        self.playerArea.layer.masksToBounds = true
         
         self.addSubview(self.playerArea)
         self.insertSubview(self.detailArea, at: 0)

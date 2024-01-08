@@ -19,8 +19,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startPlayer(_ sender: Any) {
-        guard let url = URL(string: "https://d3rlna7iyyu8wu.cloudfront.net/skip_armstrong/skip_armstrong_stereo_subs.m3u8") else { return }
+        guard let url = URL(string: "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8") else { return }
         self.player.start(videoUrl: url)
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
     }
     
 }
