@@ -10,7 +10,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SwipePlayer:
-    :commit: 269bd6bf67e88be94a2a6b1d4e0a7300efaba012
+    :commit: 599c79962f9bdf195b68884cb2b703cfcb13f736
     :git: https://github.com/SerkanHocam/YoutubeSwipePlayer.git
 
 SPEC CHECKSUMS:
@@ -18,4 +18,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ae25b824bbafeb7ed53f952cbca289b1c18a36ef
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.14.2

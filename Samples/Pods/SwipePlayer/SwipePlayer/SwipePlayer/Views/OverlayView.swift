@@ -142,7 +142,7 @@ class OverlayView:UIView, IOverlayView {
     
     //MARK: OverlayView delegate
     func orientationChange(current: UIInterfaceOrientationMask) {
-        if self.player.currentOrientation == .portrait {
+        if current == .portrait {
             self.vwPlayer.frame = CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height - self.seekBar.frame.height / 2)
             self.vwFligran.frame = self.vwPlayer.frame
             self.vwControls.frame = self.bounds
@@ -214,11 +214,12 @@ class OverlayView:UIView, IOverlayView {
     func swipeViewMinimized() {
         self.progressBar.isHidden = true
         self.vwPlayer.frame = self.bounds
+        self.vwLoading.frame = self.bounds
     }
-    
     func swipeViewMaximized() {
         self.progressBar.isHidden = false
         self.vwPlayer.frame = CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height - self.seekBar.frame.height / 2)
+        self.vwLoading.frame = self.vwPlayer.frame
     }
     
     

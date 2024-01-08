@@ -188,15 +188,18 @@ public class SwipePlayer:NSObject {
         if let vc = self.fullScreenVC, let parentView = self.superView {
             
             if let o = self.overlay {
+                o.orientationChange?(current: .portrait)
+                
                 o.frame = parentView.bounds
                 parentView.addSubview(o)
             } else {
                 self.player.frame = parentView.bounds
                 parentView.addSubview(self.player)
             }
-            self.overlay?.orientationChange?(current: .portrait)
+            
             vc.dismiss(animated: animated)
             self.fullScreenVC = nil
+            
         }
     }
     

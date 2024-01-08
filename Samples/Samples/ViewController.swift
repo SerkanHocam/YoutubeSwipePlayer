@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         }
         let player = SwipePlayer(viewController: self)
         player.detailView = DetailView()
-        guard let url = URL(string: "https://d3rlna7iyyu8wu.cloudfront.net/skip_armstrong/skip_armstrong_stereo_subs.m3u8") else { return }
+        guard let url = URL(string: "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8") else { return }
         player.start(videoUrl: url)
         
         player.play()
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         player.overlay = newOverlay
         player.detailView = DetailView()
         
-        guard let url = URL(string: "https://d3rlna7iyyu8wu.cloudfront.net/skip_armstrong/skip_armstrong_stereo_subs.m3u8") else { return }
+        guard let url = URL(string: "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8") else { return }
         player.start(videoUrl: url)
         
         self.player = player
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         player.backgroundColor = header.backgroundColor
         detail.backgroundColor = .clear
         
-        guard let url = URL(string: "https://d3rlna7iyyu8wu.cloudfront.net/skip_armstrong/skip_armstrong_stereo_subs.m3u8") else { return }
+        guard let url = URL(string: "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8") else { return }
         player.start(videoUrl: url)
         
         self.player = player
@@ -85,10 +85,14 @@ class ViewController: UIViewController {
         player.miniPlayerView = nil
         
         
-        guard let url = URL(string: "https://d3rlna7iyyu8wu.cloudfront.net/skip_armstrong/skip_armstrong_stereo_subs.m3u8") else { return }
+        guard let url = URL(string: "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8") else { return }
         player.start(videoUrl: url)
         
         self.player = player
         
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
     }
 }
