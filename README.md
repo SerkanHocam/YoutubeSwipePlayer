@@ -4,7 +4,7 @@
 It is a open source framework to create player seems youtube for IOS.
 
 <p float="left">
-  <img src="https://www.serkanhocam.com/github/youtube_player/anim.gif" width="300" />
+  <img src="/images/anim.gif" width="300" />
 </p>
 
 ## Usage:
@@ -27,15 +27,15 @@ Create an instance and show it.
 It start fallowing image.
 
 <p float="left">
-  <img src="https://www.serkanhocam.com/github/youtube_player/default.png" width="300" />
+  <img src="/images/default.png" width="300" />
 </p>
 
 It is convenient to customize Overlay, Header, Minimize View.
 The sample project can help how to customize views.
 
 <p float="left">
-  <img src="https://www.serkanhocam.com/github/youtube_player/overlay.png" width="300" />
-  <img src="https://www.serkanhocam.com/github/youtube_player/header.png" width="300" />
+  <img src="/images/overlay.png" width="300" />
+  <img src="/images/header.png" width="300" />
 </p>
 
 ## Supported versions & requirements:
